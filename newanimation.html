@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.main{
+
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    animation-name: circlee;
+
+    animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+.box{
+
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+    border-radius: 50%;
+}
+
+
+    @keyframes move {
+
+        0%{
+
+
+        }
+        25%{
+
+            transform: translate(300px);
+        }
+        
+        50%{
+
+            transform: translate(300px ,300px);
+        }
+        75%{
+
+            transform: translate(0,300px);
+        }
+    }
+
+
+    @keyframes circlee {
+        0%{
+
+            transform: rotate(360deg);
+        }
+        
+    }
+
+</style>
+<body>
+    
+<div class="main">
+
+    <div class="box"></div>
+</div>
+
+
+</body>
+</html>

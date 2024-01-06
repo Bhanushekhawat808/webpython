@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+.h{
+
+    color: blue;
+}
+.h::after{
+
+    content: "";
+
+    animation-name: namechange;
+    animation-duration: 4s;
+    color: green;
+    animation-iteration-count: infinite;
+}
+
+@keyframes namechange {
+    
+
+    0%{
+
+        content: ' JAIPUR';
+    }
+    10%{
+
+        content: ' udaipur';
+    }
+
+    30%{
+
+        content: ' kota';
+    }
+    50%{
+
+        content: ' jaipur-west';
+    }
+    75%{
+
+        content: ' jhodhpur';
+    }
+    100%{
+
+        content: ' jaipur-east';
+    }
+}
+</style>
+
+
+
+<body>
+    <h1 class="h">Welcome</h1>
+    
+</body>
+</html>

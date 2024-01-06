@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid t3</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            height: 500px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:20px;
+            grid-template-areas: "main head head"
+            "main kk kk"
+            "main kk kk";
+            padding: 20px;
+
+        }
+
+        .box {
+            border: 1px solid red;
+        }
+
+        .b1 {
+            grid-area: main;
+        }
+        
+        .b2 {
+            grid-area: head;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="main">
+        <div class="box b1"></div>
+        <div class="box b2"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

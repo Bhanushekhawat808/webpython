@@ -1,0 +1,50 @@
+
+/* 
+h1{color: blue;
+
+
+}
+p{
+
+
+    color: brown;
+}
+
+.demo{
+
+    color: aqua;
+    background-color: bisque;
+}
+.demo>p{
+
+    color: aqua;
+}
+
+
+#k{
+
+
+    color: chartreuse;
+} */
+
+h1{
+
+border-width: 2px 10px 5px 12px ;
+border-style: dotted dashed;
+border-color: red blue brown green;
+    color:green;
+}
+
+/* 
+3 in in 
+
+
+selctor  basic id class 
+universal *
+  
+property:value
+
+color 
+background-color: 
+
+*/

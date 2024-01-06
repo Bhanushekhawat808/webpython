@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .main{
+
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+    }
+
+    @media (max-width:500px) {
+
+        .main{
+
+            flex-direction: column;
+            gap:5px;
+
+            height: 100px;
+        }
+        
+    }
+</style>
+<body>
+
+    <div class="main">
+
+        <div class="box">HOme</div>
+        <div class="box">About</div>
+        <div class="box">contact</div>
+        <div class="box">link</div>
+   
+    </div>
+    
+</body>
+</html>

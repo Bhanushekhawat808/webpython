@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+             border: 1px solid black;
+             height: 500px;
+             width: 500px;
+
+        }
+        .box {
+            border: 1px solid red;
+            height: 100px;
+            width: 100px;
+            animation-name: new;
+            background-color: aqua;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        } 
+        @keyframes new {
+
+            25%{
+                transform:translate(400px);
+                /* border-radius: 50%; */
+                background-color: aquamarine;
+            }
+            50%{
+                transform: translate(400px, 400px);
+            }
+            75%{
+                transform:translate(0,400px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

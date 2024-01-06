@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+
+        .navbar {
+            background-color: red;
+            
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+         
+        }
+        .navbar li a {
+           color: white;
+            text-decoration: none ;
+            padding: 10px 20px;
+        }
+        .navbar input {
+            border: 0px solid black;
+            border-radius: 35px;
+            padding: 5px 50px;
+            width:154;
+        }
+        .navbar li a:hover {
+            color: aquamarine;
+        }
+
+        .search {
+            float: right;
+            padding: 10px 50px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search the products here">
+            </div>
+        </ul>
+    </nav>
+    </header>
+    
+</body>
+</html>

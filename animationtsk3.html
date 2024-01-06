@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.main {
+    height: 400px;
+    width: 800px;
+    background-color: rgb(160, 201, 237);
+    display: flex;
+    justify-content:flex-start; 
+    align-items: flex-start;
+    gap: 600px;
+    
+
+
+}
+.circle1 {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: one;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+  
+
+
+}
+@keyframes one {
+    0% {
+
+    }
+    90% {
+        transform: translate(700px);
+    }
+}
+
+.c1{
+
+    background-color: green;
+
+    animation-name: two;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes two{
+    0% {
+
+    }
+    90% {
+        transform: translate(-700px);
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+     <div class="main">
+        <div class="circle1"></div>
+        <div class="circle1  c1"></div>
+     </div>    
+</body>
+</html>

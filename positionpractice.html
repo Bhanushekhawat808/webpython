@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            width: 600px;
+            height: 400px;
+            margin: 50px;
+        }
+        .boxx {
+
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+        }
+        .b1 {
+           
+            background-color: aqua;
+            position: relative;
+            top: 20px;
+            right: 30px;
+        }
+
+        .b2 {
+        background-color: blue;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+        }
+
+        .b3 {
+           background-color: brown;
+            position: fixed;
+            bottom: 50px;
+            right: 29px;
+        }
+
+        .b4 {
+           background-color: chartreuse;
+            position: sticky;
+            top: 20px;
+            left: 10px;
+        }
+        .space {
+            height: 800px;
+        }
+
+</style>
+</head>
+<body>
+    <!-- position are of 4 types 
+    1) Relative [Works within the main] 
+    2) Absolute [if main is not defined then work in root]
+    3) Fixed [ If we provide fixed position then it will not change its position even if we scroll down the site ]
+    4) Sticky [ it will stick to the position at a particular distance we provide in the main ]         -->
+<body>
+<div class="box">
+    <div class="boxx b1"></div>
+    <div class="boxx b2"></div>
+    <div class="boxx b3"></div>
+    <div class="boxx b4"></div>
+</div>
+<div class="space"></div>
+
+</body>
+</html>

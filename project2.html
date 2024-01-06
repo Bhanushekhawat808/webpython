@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: white;
+            padding: 20px 20px;
+            padding-top: 200px; 
+            padding-left: 780px;
+           
+        
+        }
+
+        .city {
+            padding-left: 800px;
+
+        }
+
+        .main {
+
+            width: 100%;
+            height: 500px;
+            background-image: url(./Banner\ Image.webp);
+            background-size: cover;
+            /* background-position: center; */
+
+
+        }
+
+        .navbar {
+            background-color: transparent;
+        }
+        #sum {
+            padding: 10px;
+            
+        }
+
+        .navbar li {
+            color: white;
+            float: right;
+            padding-top: 10px;
+            padding-right: 70px;
+            list-style: none;
+        }
+
+        #logo {
+            height: 50px;
+            width: 50px;
+            /* margin-top: 250px; */
+            margin-left: 50%;
+            position: absolute;
+            top: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+
+        #logo>img {
+            height: 50px;
+            width: 50px;
+            /* padding-top: 160px;
+                padding-left: 750px; */
+            border-radius: 50%;
+        }
+
+        .city {
+            margin: auto;
+            border: 0px solid white;
+        }
+        
+        h1 {
+            margin-left: 455px;
+            margin-top: 50px;
+        }
+#meal {
+    margin-left: 460px;
+    margin-top: 25px;
+    color: rgb(116, 115, 115);
+}
+
+
+        .dish {
+            border: 1px solid white;
+            /* height: auto; */
+            width: 1050px;
+             height: 230px;
+            /* width: 950px;  */
+            margin-top: 10px;
+            margin-left: 100px;
+            padding: 5px;
+            margin-left: 450px;
+            display: grid;
+            grid-template-areas: "a b c"
+                "d e f";
+            grid-template-columns: 1fr 1fr 1fr; 
+        }
+
+        
+
+        .box {
+            /* border: 5px solid black; */
+            height: 100px;
+            width: 350px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+           
+            
+        }
+        
+        .box>img {
+            height: 100px;
+            width: 120px;
+        }      
+    
+        #b1 {
+            display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+        }
+
+        #b2 {
+           
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+            
+
+        }
+
+        #b3 {
+            display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+        }
+
+        #b4 {
+            display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+                
+        }
+
+        #b5 {
+            display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+                
+        }
+
+        #b6 {
+            display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        p {
+            font-size: larger;
+        }
+        span {
+            font-family:Georgia, Times, 'Times New Roman', serif;
+            color: rgb(156, 155, 155);
+            font-size: smaller;
+
+        }
+        #acc {
+            border: 2px solid white;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            margin-right: 15px;
+            margin-left: -46px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <li id="acc">Create an account</li>
+                    <li> Login</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="logo">
+            <img src="./5148957.jpg" alt="#">
+        </div>
+        <div>
+            <h2> Find the best restaurants, cafes, and bars </h2>
+        </div>
+        <div class="city">
+            <input type="text" name="city" list="city" placeholder="City">
+
+            <datalist id="city">
+                <option> Banglore </option>
+                <option> Jaipur</option>
+                <option>Delhi</option>
+                <option> Ahmedabad</option>
+                <option> Mumbai</option>
+
+            </datalist>
+
+          <span id="sum">
+            <input type="search" name="search" placeholder="Search for Restaurant" list="search">
+            </span>
+
+            <datalist id="search">
+                <option> Ravi Restaurant</option>
+                <option> Taj Hotel</option>
+                <option> Kanha Restaurant</option>
+                <option> Bandikui Restaurant</option>
+                <option> Jaipur Hotel</option>
+
+            </datalist>
+
+        </div>
+    </div>
+
+    <div>
+        <h1>Quick Searches</h1>
+     </div>
+        <div>
+            <p id="meal">Discover Restaurant by type of meals</p>
+        </div>
+
+    <div class="dish">
+
+        <div class="box">
+            <img src="./breakfast.png" alt="">
+            <div id="b1">
+            <p> 
+                <b> Breakfast </b>
+                </p>
+         <span>Start your day with exclusive breakfast options </span>
+         </div>
+           
+        </div>
+
+        <div class="box" >
+            <img src="./Lunch.png" alt=""> 
+            <div id="b2">
+                <p><b>Lunch   </b></p>
+           <span> your day with exclusive breakfast options </span>
+            </div>
+         </div>
+
+        <div class="box" >
+            <img src="./Snacks.png" alt="">
+            <div id="b3">
+            <p>
+                <b> Snacks </b>
+                </p>
+           <span> Start your day with exclusive breakfast options </span>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="./Dinner.webp" alt="">
+            <div id="b4">
+           <p>
+
+                <b> Dinner </b>
+                </p>
+          <span> Start your day with exclusive breakfast options </span>
+            </div>          
+        </div>
+
+        <div class="box">
+            <img src="./Drinks.webp" alt="">
+            <div id="b5">
+           <p>
+             <b> Drinks </b>
+             </p>
+           <span> Start your day with exclusive breakfast options </span>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="./Nightlife.webp" alt="">
+            <div id="b6">
+           <p>
+             <b> Nightlife </b>
+             </p>
+            <span> Start your day with exclusive breakfast options </span>
+             </div>
+        </div>
+
+        </div>
+</body>
+
+</html>
